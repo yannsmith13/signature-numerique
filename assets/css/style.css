@@ -2,5 +2,66 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+}
+
+:root {
+    --color-success: #4caf50;
+    --color-warning: #ffc107;
+    --color-danger : #f44336;
+    --color-white: #FFFFFF;
+    --color-black: #222222;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-black);
+    min-height: 100vh;
+    padding-top: 1.5rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.canvas-container {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+
+#zone-signature {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    background: white;
+}
+
+.controls {
+    text-align: center;
+}
+
+.controls button {
+    all: unset;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 0.8rem 1rem;
+    margin: 0 0.5rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.controls button#btn-effacer {
+    background: var(--color-warning);
+    color: var(--color-white);
+}
+.controls button#btn-valider {
+    background: var(--color-success);
+    color: var(--color-white);
+}
+
+span.alert {
+    display: block;
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+    text-align: center;
+    color: var(--color-danger);
 }

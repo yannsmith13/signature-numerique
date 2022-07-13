@@ -5,14 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signature numérique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     
+    <h1>Signature numérique</h1>
 
+    <div class="canvas-container">
+        <canvas id="zone-signature" width="350" height="350">
+            Votre navigateur ne supporte pas le canvas.
+        </canvas>
+    </div>
 
-    <script src="./assets/js/Signature.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <div class="controls">
+        <button id="btn-effacer">Effacer</button>
+        <button id="btn-valider">Valider</button>
+    </div>
+    <div>
+        <span class="alert"></span>
+    </div>
+
+    <script src="./assets/js/script-signature.js"></script>
 </body>
 </html>
